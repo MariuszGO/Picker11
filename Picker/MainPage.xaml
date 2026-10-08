@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Picker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label
+        Text="Wybierz rodzaj biletu"
+        FontSize="22" />
+
+            <Picker
+        x:Name="pickerBilet"
+        Title="Rodzaj biletu">
+
+                <Picker.Items>
+                    <x:String>Normalny</x:String>
+                    <x:String>Ulgowy</x:String>
+                    <x:String>Dziecięcy</x:String>
+                </Picker.Items>
+
+            </Picker>
+
+            <Picker
+        x:Name="liczba"
+        Title="Podaj liczbę biletów">
+
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                    <x:String>7</x:String>
+                    <x:String>8</x:String>
+                    <x:String>9</x:String>
+                    <x:String>10</x:String>
+                    <x:String>11</x:String>
+                    <x:String>12</x:String>
+                </Picker.Items>
+
+            </Picker>
+
+
+            <DatePicker
+                    x:Name="nasza_data"
+                    Format="dd.MM.yyyy" />
+
+
+            <Button
+        Text="Oblicz cenę"
+        Clicked="OnObliczClicked" />
+
+            <Label
+        x:Name="wynik"
+        FontSize="20" />
+        
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
